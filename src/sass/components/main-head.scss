@@ -1,0 +1,23 @@
+.main-head {
+  @include bcg-settings();
+  background-image: url("../images/bcg/bcg-min.jpg");
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 230px;
+
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-head {
+    background-image: url("../images/bcg/bcgx2@2x-min.jpg");
+
+  }
+}

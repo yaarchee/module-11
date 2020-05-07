@@ -1,0 +1,21 @@
+.wrap-link{
+  text-align: center;
+}
+.wrap-link__primary {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  border: 3px solid white;
+  letter-spacing: -1px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+}
+.wrap-link__primary:hover{
+  color: $primary-accent-color;
+  border: 3px solid $primary-accent-color;
+
+}

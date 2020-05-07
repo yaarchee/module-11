@@ -1,0 +1,46 @@
+.main-title {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+
+}
+.main-title span{
+  font-family: $seond-title-font;
+  font-weight: 400;
+  text-transform: initial;
+  display: block;
+}
+
+.primary {
+  max-width: 840px;
+  font-weight: 700;
+  width: 100%;
+  font-size: 150px;
+  line-height: 142px;
+  margin-bottom: 110px;
+
+}
+.primary span{
+  font-size: 72px;
+}
+
+
+.secondary{
+  color: #333333;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 38px;
+  margin-bottom: 64px;
+  &::before{
+    @extend %pseudo;
+    width: 60px;
+    height: 3px;
+    background: $secondary-accent-color;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}

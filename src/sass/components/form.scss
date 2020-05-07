@@ -1,0 +1,40 @@
+.form-main{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form-main__mail {
+  padding-left: 12px;
+  border-bottom: solid 1px $border-input-color;
+  border-top: solid 1px $border-input-color;
+  border-left: solid 1px $border-input-color;
+  border-right: none;
+  font-family: $sub-main-font;
+  font-weight: 400;
+  width: 229px;
+  outline: none;
+}
+
+.form-main__mail::placeholder{
+  color: $primary-placeholder-color;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  font-style: italic;
+}
+
+
+
+.form-main__button {
+  @extend %button;
+  height: 40px;
+  padding: 0 33px;
+  color: $primary-white-color;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $primary-bg-color;
+
+}

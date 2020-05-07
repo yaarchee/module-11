@@ -1,0 +1,21 @@
+@mixin font-settings($size, $height, $color) {
+  font-size: $size;
+  line-height: $height;
+}
+@mixin bcg-settings($repeat:no-repeat, $size:cover, $position:center){
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}
+
+@mixin generate-pseudo-icons($list, $path, $ext) {
+  @each $icon in $list {
+    .#{$icon}::before {
+      background-image: url(#{$path}#{$icon}.#{$ext});
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(#{$path}#{$icon}@2x.#{$ext});
+      }
+    }
+  }
+}
